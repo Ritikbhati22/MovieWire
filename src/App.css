@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap') * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --text-clr: #4a5c6c;
+    --bg-clr: #f2f4fc;
+    --border-clr: rgb(156, 176, 193);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f2f4fc;
+}
+
+h2 {
+    font-family: "Lora", serif;
+    color: #4a5c6c;
+    font-size: 2rem;
+    transition: all 0.5s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 10rem;
+    max-height: 30rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+}
+
+.container {
+    max-width: 140rem;
+    margin: auto;
+    padding: 3rem;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    width: 25rem;
+    max-width: 30rem;
+    min-height: 30rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-section {
+    margin: auto;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+input {
+    width: 30rem;
+    border-radius: 100px;
+    border: none;
+    border: 1px solid var(--border-clr);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    outline: none;
+    margin-top: 2rem;
+}
+
+.card-error p {
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.movie-section{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-clr);
+    display: grid;
+    place-items: center;
+}
+.loading{
+    font-size:3.2rem;
+    color: var(--ttext-clr);
+    text-align:center;
+}
+.movie-section .loading{
+    font-size: 3.2rem;
+    color:var(--bg-clr);
+    text-align:center;
+}
+.movie-card{
+    min-width: 30rem;
+    width: 50vw;
+    background-color: var(--bg-clr);
+    display: grid;
+    gap:2rem;
+    grid-template-columns: 0.6fr 1fr;
+    box-shadow: rgba(99,99,99,0.2);
+    border-radius: 2rem;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+.movie-card img{
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    max-height: auto;
+}
+.movie-card .title{
+    font-size: 2.8rem;
+    color:#4a5c6c;
+    font-weight: bold;
+    
+}
