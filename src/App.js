@@ -3,7 +3,7 @@ import React from "react";
 import Infopage from "./Infopage"
 import Error from "./Error"
 import { Route, Routes } from "react-router-dom";
-import WatchingMovie from "./WatchingMovie";
+import Play from "./Play";
 function App() {
   return (
     <>
@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="movie/:id" element={<Infopage />} />
         <Route path="*" element={<Error />} />
-        <Route path="/watchingmovie/:id" element={<WatchingMovie />} />
+        <Route path="/play/:id" element={<Play />} />
       </Routes>
     </>
   );

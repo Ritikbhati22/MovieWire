@@ -45,10 +45,10 @@ const Infopage = () => {
     <section className='bg-slate-800 min-h-screen p-10 '>
       <div className='flex justify-center items-center space-x-5'>
         <figure className='p-5 border-solid border-2 border-slate-700 rounded-xl'>
-          <NavLink to={`/watchingmovie/${id}`}><a href={"https://www.2embed.cc/embed/" + id}><img src={movie.Poster} className='rounded-2xl ' /></a></NavLink>
+          <NavLink to={`/play/${id}`}><a href={"https://www.2embed.cc/embed/" + id}><img src={movie.Poster} className='rounded-2xl ' /></a></NavLink>
           <h2 className='text-slate-400 justify-center text-center pt-3 font-serif text-xl
           '><b>{movie.Title}</b></h2>
-          <NavLink to={`/watchingmovie/${id}`}><h1 className='text-slate-400 justify-center text-center font-serif text-xl bg-slate-700 rounded-lg  mt-2 mb- flex'>Tap To Play</h1></NavLink>
+          <NavLink to={`/play/${id}`}><h1 className='text-slate-400 justify-center text-center font-serif text-xl bg-slate-700 rounded-lg  mt-2 mb- flex'>Tap To Play</h1></NavLink>
         </figure>
         <div className='text-slate-400 p-5 bg-slate-900 rounded-2xl font-serif'>
           <p><b>Title :</b> {movie.Title}</p>

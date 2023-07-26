@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-const WatchingMovie = () => {
+const Play = () => {
   const {id} = useParams()
 
   return (
@@ -12,4 +12,4 @@ const WatchingMovie = () => {
   )
 }
 
-export default WatchingMovie
+export default Play
